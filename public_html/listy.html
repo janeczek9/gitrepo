@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Listy w HTML-u</title>
+    <style>
+        #menu li {
+            display: inline;
+            padding-left: 20px;
+            margin-left: 10px;
+            }
+    
+            .lista-abc {
+                list-style-type: lower-alpha;
+            }
+            .lista-kwadrat {
+                list-kwadrat-type: square;
+            }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="Tabele.html">Tabele</a></li>
+        </ul>
+    </div>
+    <h1>Zasady stosowania Listy</h1>
+    <h2>Listy wypunktowane</h2>
+        <ul class=lista-kwadrat>
+            <li>element listy</li>
+            <li>element listy</li>
+            <li>element listy</li>
+            <li>element listy</li>
+            <li>
+                <ol class="lista-abc">
+                    <li>element zagnieżdżony</li>
+                    <li>element zagnieżdżony</li>
+                    <li>element zagnieżdżony</li>
+                </ol>
+            </li>
+        </ul>
+        
+    <h2>Listy numerowane</h2>
+        <ol>
+            <li>element listy</li>
+            <li>element listy</li>
+            <li>element listy</li>
+            <li>element listy</li>            
+        </ol>
+</body>
+
+</html>
