@@ -17,16 +17,19 @@ def cw1():
 def cw2():
     n = int(input("Podaj zakres dolny: "))
     m = int(input("Podaj zakres górny: "))
-    for i in range(n, m):
+    for i in range(n, m + 1):
         print("{}".format(i), end=' ')
     return 0
     
 def cw3():
+    n = int(input("Liczba: "))
+    for i in range (n + 1):
+        print (i*i)
 
     return 0
 
 def main(args):
-    cw1()
+    cw3()
     return 0
 
 if __name__ == '__main__':
