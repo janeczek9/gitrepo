@@ -3,7 +3,10 @@
 #
 #  kalkulator.py
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 85d94fae65d142af8f3c3798b392a264d9ff0ac5
 def pokaz_liste():
     print('''Lista działań:
           +  – dodawanie
@@ -30,6 +33,7 @@ def dziel(a, b):
     else:
         print('Błąd dzielenia przez 0')
 
+<<<<<<< HEAD
 def suma(a, b):
 	return a + b
 	
@@ -40,11 +44,14 @@ def iloczyn(a, b):
 	return a * b
 	
 
+=======
+>>>>>>> 85d94fae65d142af8f3c3798b392a264d9ff0ac5
 def main(args):
     pokaz_liste()
     while True:
         d = input("Wybierz działanie: ")
         if d == '+':
+<<<<<<< HEAD
 			a = pobierz_liczbe('Podaj liczbę: ')
 			b = pobierz_liczbe('Podaj liczbę: ')
 			if a and b:
@@ -65,6 +72,13 @@ def main(args):
 				wynik = iliczyn(a, b)
 				print('{} * {} = {}'.format(a, b, wynik))
             
+=======
+            pass
+        elif d == '-':
+            pass
+        elif d == '*':
+            pass
+>>>>>>> 85d94fae65d142af8f3c3798b392a264d9ff0ac5
         elif d == '/':
             a = pobierz_liczbe('Podaj dzielną: ')
             b = pobierz_liczbe('Podaj dzielnik: ')
