@@ -5,6 +5,10 @@
 #  
 #  Copyright 2019  <>
 
+from random import randint
+import os
+import json
+
 def pokaz_menu():
     """Funkcja wyświetla działania dostępne dla użytkownia"""
     print("""
@@ -29,6 +33,33 @@ def listaSlow(dane):
         i += 1
 
 
+def tlumacz(dane):
+    if not dane:
+        print('Brak słow')
+        return
+    slowa = list(dane.keys())
+    op = 't'
+    while op == 't':
+        if len(slowa) > 1:
+            slowo = slowa[randint(0, len(slowa) - 1)]
+        else:
+            slowo = slowa[0]
+        print('Przetłumacz:', slowo)
+        znaczenia = pobierzZnaczenia()
+        poprawne = [z for z in znaczenia if z in dane [slowo]]
+        if poprawne:
+            print('Poprawne: ', ', '.join(poprawne))
+            slowa.remove(slowo)
+        else:
+            print('Brak poprawnych znaczeń')
+        if slowa:
+            op = input('Następne (t/n)? : ').lower()
+            print()
+        else:
+            print('Przetłumaczyłeś wszystko!')
+            return
+
+
 def pobierzZnaczenia():
     znaczenia = input('Podaj znaczenie(a) oddzielone przecinkami:\n')
     znaczenia = znaczenia.split(',')
@@ -47,8 +78,36 @@ def pobierzDane(dane):
         dane[slowo] = pobierzZnaczenia()
 
 
+def wczytaj_dane(plik, roz='.dat'):
+    dane = {}
+    if os.path.isfile(plik + roz):
+        with open(plik + roz, "r") as f:
+            dane  = json.load(f)
+    else:
+        print('Plik {} nie istnieje.'.format(plik + roz))
+    return dane
+
+
+def wybierzJezyk(konf_dane):
+    if konf_dane['jezyki']:
+        print('Wybierz język: ')
+        for i, j in enumerate(konf_dane['jezyki']):
+            print('{}. {}'.format(i + 1, j))
+        print('{}. nowy język'.format(i + 2))
+
+
+
 def main(args):
-    dane = {'go': ['iść', 'jeździć'], 'see': ['widzieć', 'oglądać']}
+    #  dane = {'go': ['iść', 'jeździć'], 'see': ['widzieć', 'oglądać']}
+    
+    konf_plik = 'baza'
+    konf_dane = wczytaj_dane(konf_plik)
+    if 'jezyki' not in konf_dane:
+        konf_dane['jezyki'] = []
+    jesyk = wybierzJezyk(konf_dane)
+    print(konf_dane)
+    return
+    
     
     operacja = 0
     while operacja != 5:
@@ -57,7 +116,9 @@ def main(args):
         if operacja == 1:
             listaSlow(dane)
         elif operacja == 2:
-            pobierzDane(dane)    
+            pobierzDane(dane)
+        elif operacja == 3:
+            tlumacz(dane) 
         elif operacja == 5:
             print('\nDo zobaczenia!')
         else:
