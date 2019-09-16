@@ -8,4 +8,19 @@
                     -liniowy
                     -sekwencyjny
         3)dane wyjściowe i ich typy / postać
+        
+        
+        
+    i++ / ++i inkrementacja nzmiennej, tj. powiększenie o 1
+    i-- / --i dekrementacja, tj. pomniejszenie zmiennej o 1
+    i=+ inkrementacja o 2
+    
+                                                    
+                                                            Błędy i ostrzeżenia kompilatora
+                                                    
+                                                    error:"i" was not declared in this scope
                 
+    int i; // DEKLARACJA ZMIENNEJ
+	int i = 0; // DEKLARACJA I INICJACJA
+    i = 0; // INICJACJA ZMIENNEJ
+     << endl; koniec wiersza
