@@ -30,6 +30,7 @@ int main(int argc, char **argv)
         cout << "Da się zrobić trójkąt" <<  endl;
     }}
     else cout << "Nie da się zrobić trójkąta" <<  endl;
+       
        if ((a * a + b * b ==  c * c) || (a * a + c * c ==  b * b) || (b * b + c * c ==  a * a))
         cout << "To jest trojkat prostokatny.";
     else
