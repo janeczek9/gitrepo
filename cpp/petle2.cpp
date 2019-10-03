@@ -11,25 +11,24 @@
 
 using namespace std;
 
-void prostokat(int x, int y, char z){
+void prostokat(int x, int y,){
     int i, j;
     for(i = 1; i <= x; i++) {
         for(j = 1; j <= y; j++) {
-            cout << z;
+            cout << #;
             }
             cout << endl;
         }
     }
 
-void prostokat2(int x, int y, char z){
+void prostokat2(int x, int y,){
     int i, j;
     for(i = 1; i <= x; i++) {
         for(j = 1; j <= y; j++) {
             if(i == 1 || i == x)  
-              cout << z;
+              cout << #;
           
             else if (j == 1 || j == y)    
-            cout << z;
         else 
         cout << " ";
     }
@@ -37,6 +36,16 @@ void prostokat2(int x, int y, char z){
     }
 }
 
+
+void drukujchoinka(int x, int y){
+  int i,j;
+  for (i=0;i<x;i++)
+    {
+      for (j=0;j<=i;j++)
+          
+        cout << "#";
+      cout << endl; 
+} }
 
 
 void drukujTabliczke(int x, int y)  {
@@ -55,15 +64,13 @@ void drukujTabliczke(int x, int y)  {
 
 int main(int argc, char **argv)
 { 
-    int a, b;
-    char znak;
-    cout << "Podaj rozmiar x, y: ";
-    cin >> a >> b;
-    cout << "Podaj znak: ";
-    cin >> znak;
-    prostokat(a, b);
+    prostokat(5, 12);
     cout << endl;
-    prostokat2(a, b);
-	return 0;
+    prostokat2(5, 12);
+    cout << endl;
+	drukujchoinka(5, 12);
+    
+    return 0;
+    
 }
 

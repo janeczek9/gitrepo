@@ -24,3 +24,9 @@
 	int i = 0; // DEKLARACJA I INICJACJA
     i = 0; // INICJACJA ZMIENNEJ
      << endl; koniec wiersza
+
+
+
+
+
+    rzutowanie typu (ang. casting) - dynamiczna zmiana typu zmiennej
