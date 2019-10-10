@@ -7,35 +7,31 @@
 
 
 #include <iostream>
+
 using namespace std;
 
+int staz = 1; int zarobek = 1000; int lata;
 
-
-int drukuj(a, b)   {
-    cout << "Pracujesz " << a << "lat i zarabiasz " << b << endl;
-    return 0
-    }
-int awans(a, b) {
-    
-    
-    }
-
-
-
-int cw1()   {
-    int staz = 1;
-    int zarobek = 1000;
-    int lata = 0
-    cout << "Jaki jest przewidywany okres zatrudnienia (w latach): " << endl
-    cin << lata;
-    drukuj(staz, zarobek)
-    return 0;
-    }
-
-
-int main(int argc, char **argv)
-{
-	cw1();
-	return 0;
+void drukuj(){
+      cout << "Pracujesz " << staz << " lat i zarabiasz " << zarobek << "zł." << endl;  
 }
 
+void awans()
+{
+    for (staz=1; staz <= lata; staz += 1){
+
+    zarobek = zarobek*1.1;
+    cout << "Po " << staz << " lat pracy, Twoja pensja wyniesie " << zarobek << "zł." << endl;
+    
+}
+}
+
+int main()
+{
+    
+	cout << "Przewidywany okres pracy: ";
+    cin >> lata;
+    drukuj();
+    awans();
+	return 0;
+}
