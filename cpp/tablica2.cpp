@@ -8,6 +8,8 @@
 #include <iostream>
 using namespace std;
 
+
+
 void pobierzoceny(int t[], int r)    {
     
     cout << "Podaj " << r << " ocen: " << endl;
@@ -21,21 +23,23 @@ void drukujTab(int t[], int r)    {
     cout << "twoje oceny: "<< endl;
     int i;
     for (i = 0; i < r; i++)  {
-        cout << t[i];
+        cout << t[i] << ", ";
     }
     cout << endl;
 }
 
 
 float srednia(int t[], int r)   {
-    int suma;
+    int suma = 0;
     float s;
     int i;
     for (i = 0; i < r; i++) { 
         suma += t[i];
+        
     }
         s = suma / r;
-    return s;
+        cout << "Srednia twoich ocen to: " << s << endl;
+    return 0;
     }
 
 
@@ -45,14 +49,9 @@ int main(int argc, char **argv)
     int rozmiar;
     cin >> rozmiar;
     int tablica[rozmiar];
-    float s;
     pobierzoceny(tablica, rozmiar);
     drukujTab(tablica, rozmiar);
-    cout << "Srednia ocen = "<< s << endl;
-    
-    
-    
-    
+    srednia(tablica, rozmiar);
 	return 0;
 }
 
