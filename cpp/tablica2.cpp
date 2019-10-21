@@ -28,8 +28,7 @@ void drukujTab(int t[], int r)    {
     cout << endl;
 }
 
-
-float srednia(int t[], int r)   {
+float srednia(int t[], float r)   {
     int suma = 0;
     float s;
     int i;
@@ -42,9 +41,7 @@ float srednia(int t[], int r)   {
     return 0;
     }
 
-
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv)    {
     cout << "Ile ocen podasz? " << endl;
     int rozmiar;
     cin >> rozmiar;
