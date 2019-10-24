@@ -45,10 +45,10 @@ int main(int argc, char **argv)
     //ascii();
     //cout << endl;
     //litery2liczby(napis, rozmiar);
-    char napis2[28] = "Twoj stary pijany i ty tez";
+    char napis2[28] = "";
     koduj(napis2, rozmiar);
     cout<< endl;
-    int napis3[28] = {4,119,111,106,32,115,116,97,114,121,32,112,105,106,97,110,121,32,105,32,116,121,32,116,101,122,0,0};
+    int napis3[28] = {};
     odkoduj(napis3, rozmiar);
     return 0;
 }
