@@ -44,18 +44,35 @@ void wczytajNominaly()  {
 }
 
 
+int policzNominal(int n) {
 
-int znajdzReszte(int reszta, nominaly[])    {
+    int liczbaBanknotow = 0;
+
+    for (int i = 0; i < liczbaNominalow; i++)    {
+        if (n > nominaly[i]) break;
+        if (nominaly[i] == n)
+            liczbaBanknotow += 1;
+        }
+        return liczbaBanknotow;
+}
+
+
+void znajdzReszte(int reszta)    {
     cout << "Wypłacene nominały; " << endl;
     int aktualnyNominal = 0;
-    
     while (reszta > 0 && aktualnyNominal < liczbaNominalow) {
         cout << "reszta = " << reszta << endl;
-        for(i = 0 ; i < liczbaNominalow; i++)   {
-            if(nominaly[i] > aktualnyNominal)
-            if(nominaly[i] > aktualnyNominal)
-            }
+        while (aktualnyNominal < liczbaNominalow && reszta < nominaly[aktualnyNominal])
+        ++aktualnyNominal;
+        int nominal = nominaly[aktualnyNominal];
+        if (aktualnyNominal < liczbaNominalow && reszta >= nominal)   {
+            int liczbaBanknotow = reszta / nominal;
+            cout << "Dostępnych Nominałow" << policzNominal(nominal) << endl;
+            reszta = reszta - liczbaBanknotow * nominal;
         }
+    }
+    if (reszta > 0)
+        cout << "Reszta nie została wydana";
 }
 
 int main(int argc, char **argv)
@@ -69,10 +86,11 @@ int main(int argc, char **argv)
     do {
         cout << "Podaj wpłatę; ";
         cin >> wplata;
-    } while (wplata < cena);
+    } 
+    while (wplata < cena);  
     
-    znajdzReszte(wplata - cena);
-    
+    znajdzReszte(cena - wplata);
+
 	
 	return 0;
 }
