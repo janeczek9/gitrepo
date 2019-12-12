@@ -1,49 +1,53 @@
-/*
- * euklides.cpp
- * 
- * Copyright 2019  <>
- */
-
-
 #include <iostream>
+
 using namespace std;
 
-
-int NWD_re1(int a, int b)   {
-    if (a != 0)
-        return NWD_re1(a % b, b - (b % a));
+int NWD_re1(int a, int b) {
+    if (a!=0)
+        return NWD_re1(a%b, b-a);
     else
-        return b;
+    return b;
 }
 
+// NWD(a, b) = a dla b = 0
+// NWD(a, b) = {a = b, b = a % b}
+// NWD(a, b) = NWD(b, a % b)
 
-int NWD_re2(int a, int b){
-    if(b != 0)
-        return NWD_re2(b, a % b);
-    else 
-        return a;
+int NWD_re2(int a, int b) {
+    if (b !=0)
+        return NWD_re2(b, a%b);
+    else
+    return a;
 }
 
+int NWD_it(int a, int b) {
+    int i;
+    a = b = i = 0;
+    while (b > 0) {
+        i++;
+        a = b;
+        b = a % b;
+    }
+    return a;
+}
 
 int main(int argc, char **argv)
-{   
-    int a = 0;
-    int b = 0;
-    int i;
-    cout << "Podaj dwie liczby: "<< endl;
-    cin >> a >> b;
-    while (a != b) {
-        i ++;
-        if(a > b)   {
-            a = a-b;
-        }
-        else {
-            b = b-a;
-            }
-        }
-    cout << "NWD = " << a << endl;
-    cout << "liczba powtórzeń = " << i << endl;
-    
-	return 0;
+{
+    int a, b, i;
+    a = b = i = 0;
+    cout << "Podaj a: ";
+    cin >> a;
+    cout << "Podaj b: ";
+    cin >> b;
+    while (a > 0){
+        i++;
+        a = a % b;
+        b = b - a;
+    }
+    cout << "NWD: " << b << endl;
+    cout << "Ilość powtórzeń: " << i << endl;
+    //cout << NWD_re1(a, b) << endl;
+    //cout << NWD_re2(a, b) << endl;
+    cout << NWD_it(a, b);
+    return 0;
 }
-
