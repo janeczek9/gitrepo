@@ -1,5 +1,5 @@
 /*
- * zlozonosc.cpp
+ * zlozonosc2.cpp
  * 
  * Copyright 2020  <>
  */
@@ -7,18 +7,16 @@
 
 #include <iostream>
 using namespace std;
-
 int main(int argc, char **argv)
-
 {
-    int n, i;
+    int n;
     cout << "Podaj wartość liczby n" << endl;
     cin >> n;
-    i = 1;
-    while (i <= n)  {
-        cout << i << ", ";
-        i += 2;
-        }       
+	int silnia = 1;
+    for (int i = 1; i <= n; i++){
+    silnia = silnia * i;    
+    }
+    cout << "slinia = " << silnia;
 	return 0;
 }
 
