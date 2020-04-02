@@ -1,0 +1,193 @@
+++i lub i++ - inkrementacja zmiennej, tj. powiększenie o 1
+i =+ 2 - powiększenie zmiennej o 2
+--i lub i-- - dekrementacja, tj. pomniejszenie zmiennej o 1
+
+1. Edycja/ Preferencje/ Narzędzia/ Terminal: terminator -e "/bin/sh %c"
+2. Build: g++ -Wall -o "%e.exe""%f"
+3. Excute: "./%e.exe"
+F8, F9, F5
+
+    int i; //DEKLARACJA
+    i = 0; // INICJACJA
+    int i = 0; // DEKLARACJA I INICJACJA = DEFINICJA
+    
+    endl - drukuje koniec wiersza
+
+error: ‘i’ was not declared in this scope - kompilator spotkał jakąś nazwe i nie wie co to za nazwa, co ma oznaczać
+
+zmienna i jest w pętli for deklarowana więc jest ważna tylko dla tej pętli for
+(w języku python nie ma pętli while)
+
+jesli nie wiem ile razy petla to while jesli wiem to for
+
+w zzad 4 jesli chce sprawidzic czy cos jest podzielne przez 3 to:
+if(i% 3== 0) tur to liczba ze zmiennej i dzieli sie przez 3
+
+setw(4) - drukuje to co chcemy wydrukowac na szerokosc 4 komorek
+
+void - dany fragment bloku (funkcja) wykonuje pewna operacje, ale niczego nie zwraca
+
+jak jest i() - to tojest funkcja bo s a nawiasy
+trzeba w tych nawiasch podawac typpy zmienny np int i
+
+W DOMU PRZYGOTOWAĆ SCHEMAT BLOKOWY FUNKCJI P U S T A K używajac blokow wyjscia wejscia, operacje 
+
+;- pusta instrukcja
+
+void - funkcje typu wejście lub wyjście, ma wejscie, ale nie ma wyjscia, bez return, nie zwrca niczego
+
+jezeli przed nazwa funkcje jest np string, int, char, to w funkcju musi byc slowo return;
+
+int wynik;
+    wynik = pomnoz(a, b);
+    cout << "ILoczyn: " << wynik;
+     - jesli ja chce tego uzyc jewszcze raz, potrzebne do zapamietania
+     
+jeseli wewnatrz funkcji zdefiniuje jakas zmienna to, to co jest w srdoku funkcji, nie jest na zewnatrz
+
+
+zmienna globalna
+
+void nazwaFunkcji(ew.parametry) {
+    zmienna lokalna
+    przesłanianie zmiennych globalnych
+    ciało funkcji;
+}
+
+zmienne globalne -  na zewnątrz funkcji, są dostpene w dowolnym miejscu programu 
+wartość zmiennej globalnej może być zmieniana w dowolnej części programu, (odradza się stosowanie tej zmiennejz punktu bezpieczeństwa programu)
+
+
+funkcja główna wykonywana jako pierwsza(main) 
+1) najpierw zmienna globalna
+2) funkcja main
+3) następne funkcje
+
+
+przekazywanie argumentów przez wartość (by value) - dostaje tylko wartosc "zapisywana w nowej komórce, twórzy kopie, swoja zmienna lokalna"
+
+przekazywanie argumentów  przez referencje (by reference) NIE JEST TWORZONA KOPIA - funkcja która wywoluje inna funkcje daje dostep zmiennych lokalnych tej pierwszej funkcji,
+& (operator et) ^ - funckaj moze udostepnic swoja funkcje lokalną innej funkcji do modifikacji 
+
+
+
+każda T A B L I C A - musi mieć nawiasy kwadratowe, w tablicy można przechowywać dane tego samego typu, w nawiasie ile liczb chcemy przechowywac, pierwszy indeks tablicy to jest zero, w tablicy wszystkie komórki zmeinnych musza być koło siebie
+nazwa tablicy wskazuje tylko pierwszą komórkę
+jak jest tablica to prawie zawsze będzie petla
+
+TABLICA W odwrotenj kolejnoś
+
+nazwa tablicy jest referencją
+
+W DOMU SREDNIA OCEN
+
+CHAR - przechowuje tylko jeden jakiś znak, zapisujemy w: '', moze przechowywać 255 znaków
+
+
+BAJT składa się z 8 BITÓW(system dwójkowy)
+
+napisy w podwójnych cudzysłowach to stałe napisowe
+
+tablice znaków mozna zainicjowac albno podajac znaki w podwojnym cudzyslowie, albo podajac pojedyncze znaki w klamarch
+
+
+tablica dwuwymiarowa - macierz
+
+#define N	3
+#define M 	3
+ - stałe, nie zmieniamy podczas programu
+ Powiązanie pewnej wartości z pewna nazwą
+ 
+ seed randomi (srand) - pseudolosowe
+ 
+ 
+ EPOKA UNIXA - tzw. cza uniksowy, liczba sekund, która upłynęła od 1 stycznia 1970
+
+
+W DOMU ZROBIĆ PROGRAM LICZYACY ILOSC WYRAZOW (ODDZIELONE SPACJA)
+
+continue - przerwij wykonywanie pętli, przejdz do nastepnej iteracji
+break - przerywa i wychodzi poza petlę
+
+n! = 1 * ... * n - > wzór iteracyjny na silnię
+n! = (n-1)! * n -> wzór rekurencyjny na silnię
+
+ZASTANOWIC W DOMU JAK ZRONIC PALINDROM
+	WYSTARCZY JEDNA PETY;A
+	
+	do poprawy palindorm
+	
+	
+	CIĄG FIBONACCIEGO I ZŁOTY PODZIAŁ
+	liczby fibonnaciego oddają proporcję złotego podziału
+	spirala -kształ galaktyk, muszle, słonecznik
+	PODRĘCZNIK STR 82
+
+POMYSLEC JAK POPRAWIC FIBONACCI ABY BYL POPRAWNY FIB(0,1) = 1 
+
+PODRĘCZNIK STR 83 - S C H E M A T  H O R N E R A
+y = a0+x^2 + a1*x + a2
+Mnożeń: 3
+Dodawań: 2
+y = (a0*x+a1)*x + a2
+Mnożeń: 2
+Dodawań: 2
+/*
+W(x) = a0*x^n +  a1*x^n-2 +...+ an-1*x + an dla n>=0
+x=2;
+1010(2)
+W(2) = 1*2^3 + 0*2*2 + 1*2^1 + 0;
+
+W(x) = (...(((a0 *x + a1)x +a2)x +...+ an-1)x +an
+*/
+Dane wejściowe:
+zmienna n = stopień wielomianu
+tabela współczynników
+argument x
+
+
+kazda nazwa zawiera pierwszy adres komorki tej tablicy, czyli jest wskaznikiem
+
+
+DOKOŃCZYC 
+JESLI PETLA WHILE ZAKONCZY DZIALANIE A RESZT AWIESKSZ AO DZERA TO NOE UDALO SIE RESZTY
+dokończyć
+
+
+R E K U R E N C J A
+
+Szukaj re2 aby tablica od konca
+
+
+W DOMU 
+ITERACYJNA WERSJA NWD_RE2 ZOPTYMALIZOWANY6
+
+test php wszystkie pytania z kodu z web mastera
+
+N A J W A Ż N I E J S Z E  W Ł A S N O Ś C I  A L G O R Y T M U:
+1)poprawność
+2)skończoność
+3)złożoność
+4)efektywność
+
+jak poprawic 1 algorytm
+
+f(n) = 1, O(1) - zlożoność stała
+f(n) = 6n, O(n) -> ta funkcja ma złożonośc rzędu n - złożonośc liniowa
+f(n) = n^2, O(n^2) - złożonośc kwadratowa
+O(log n) - złożoność logarytmiczna
+O(n!) - złożoność wykoladnicza
+
+np.:
+s = 0
+n = 10
+for i in range(2*n):  (--> Zależność liniowa)
+	s += i
+Ten algorytm ma złożoność n
+
+for i in range(2*n):  (--> Zależność kwadratowa)
+
+
+SPRAWDZIAN Z ALGORYTMIKI OD TEMATU 1 DO 7!!!!!!1 W PONIEDZIAŁEK
+TYOY ZMIENNYCH, ZMIENNE, INSYTRUKCJE WARUNKOWE PROSTE I WYJSCIA, PETLE, ALGORYTMY I ICH WLASNOSCI, OBSLUG ATABLIC, SZYFR CEZARA, ZMIENNE ZNAKOWE, KOD ASCII
+

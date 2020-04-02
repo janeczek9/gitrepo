@@ -1,0 +1,57 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-03-09T09:06:08+01:00
+
+====== <sieci ======
+Created poniedziałek 09 marca 2020
+
+**Karta sieciowa** (Network Interface Card) - najbardziej popularnym standardem jest np. Ethernet
+
+**LAN** (Lokalne sieci komputerowe - local area network) -najpopularniejszy rodzaj sieci z którą mamy do czynienia, siec LAN może być wydzielona ficzynie i logicznie
+**WAN** (Rozległa sieć)
+**Internet** - duża ilośc sieci połączona ze sobą, "sieć sieci", "między sieć" - ogólnoświatowy system połączeń między komputerami
+**Internet rzeczy** - koncepcja wedle której jednoznacznie identyfikowane ...?, 
+**Wi-Fi** - pozwala na wykorzystanie fal radiowych do komunikowania się między urzędzeniami
+**identyfikator urządzenia sieciowego** - 
+
+__Adres MAC ("adres sprzętowy")__ - termin o dwóch...?, numer sieciowy zapisany cyframi szesnastkowymi, używany do transmijsji w obrebie danej sieci lokalnej, aby urządzenia w obrebie jednej sieci mogły się komunikować
+Adres IP - wykorzystywany do komunikacji wewnątrz sieciowej oraz
+
+Internet Protocole - IP
+IPv4 - za pomoca liczb dziesiętnych (wykorzystywane 32 bity)
+x.x.x.x
+mksymalne wartości tych liczb to: 255.255.255.255
+10.0.0.0 - 10.255.255.255
+172.16.0.0 - 172.31.255.255
+192.168.0.0 - 192.168.255.255
+**Powyższe trzy zakresy są zakresami prywatnymi**, wszystkie pozostałe do publiczne.
+
+IPv6 (wykorzystywane 128 bitów)
+np. 2001:0db8:0000:0000:0000:0000:1428:57ab
+
+W sieci lokalnej obowiązują: Prywatne adresy IP
+Domyślna trasa(/brama) - każda sieć lokalna to ma, jest to urząddzenie w danej sieici które może "przepuścić" nas dalej
+
+Router - mają co najmniej dwa interfejsy sieciowe, **łączy sieci**
+"sercem" do komunkacji wewnetrznej jest - switch- przełącznik sieciowy, one najczęściej połączone są z routerami, jego rolą jest **łączenie urządzeń w obrebie jednej sieci.**
+
+to wejscie ethernetowe które ma inny kolor na routerze służy do połączenia z innymi sieciami
+
+MUX - naziemna telewizja cyfrowa (potrzebna antena, ja sie kieruje na nadajnik) i w ramach tego sa rozne kanaly
+
+__Model OSI - __model wyjaśniający jak to sie dzieje, ze poszczególne urządzenia się ze sobą komunikują. 
+Model TCP/IP - teoretyczny model warstwowej struktury protokołów komunikacyjmych, powwstał aby pomóc w tworzeniu odpornych na atak sieci komputerowych.
+
+HOST- dodowlne urządzenie będace w komunikacji sieciowej.
+
+Numery portów:
+np. 443 (jest szyfrowane i tam działa protokół https)
+139 - do wszyukiwania zasobów w sieci lokalnej
+
+W DOMU: wejść: https://www.whatismyip.com/  i zobaczyć mój publiczny adres IP 
+(w informacjach o systemie, w terminalu wpisac cmd, ipconfig, pozniej ipconfig [[/all]]
+tracert (jakaś strona) - powinniśmy coś zobaczyć
+) SPRAWDZIĆ: adres MAC, adres IP prywatny, adres IP publiczny, adres Bramu, 
+jak podłaczony jest telewizor ( np Dekoder Polsatu)
+jaki mam router? (nazwe producenta lub usługodawcy, np )
+Ile gniazd Ethernet i czy ma gniazdo oznaczone WAN

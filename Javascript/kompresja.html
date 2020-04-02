@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Kompresja pliku</title>
+</head>
+<body>
+<p id="kompresja"></p>
+<hr>
+<p>Przed kompresją: </p>
+<input type="number" id="Vnk">
+<p>Po kompresji: </p>
+<input type="number" id="Vk">
+<button onclick="displayTxt()">Wpisz</button>
+
+<script>
+	//alert(cars.length);
+	//alert(cars[0]);
+	function displayTxt() {
+    var x = document.getElementById("Vnk").value;
+    var y = document.getElementById("Vk").value;
+    var z = y / x *100;
+    //x.innerHTML = "Wpisałeś: " + document.getElementsByTagName("input")[0].value;
+    if (x < y) {
+		document.w("<p>Błędne dane!</p>")
+	}
+	else {
+		document.write("<p>Współczynnik kompresji: "+z+"%</p>");
+    }
+ }
+</script>
+
+</body>
+
+</html>

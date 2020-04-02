@@ -1,45 +1,33 @@
 /*
  * tab1.cpp
- * 
- * Copyright 2019  <>
-
  */
 
-using namespace std;
-#include <iostream>
 
+#include <iostream>
+using namespace std;
+	
 int main(int argc, char **argv)
-{   
-    int i = 0;
-    int r = 5;
-    int tab1[r];
-    int tab2[r];
-    int suma1 = 0;
-    int suma2 = 0;
-    cout << "Podaj pięciocyfrową serie znaków: " << endl;
-    for (i = 0; i<r; i++)  {
-        cin >> tab1[i];
-   }
-   
-    cout << "Podaj pięciocyfrową serie znaków: " << endl;
-    for (i = 0; i<r; i++)  {
-        cin >> tab2[i];
-    }
-    
-    for (i = 0; i < r; i++) { 
-        suma1 += tab1[i];
-    }
-    for (i = 0; i < r; i++) { 
-        suma2 += tab2[i];
-    }
-    
-    if (suma1 > suma2)  {
-        cout << "Suma pierwszej serii jest większa od drugiej";
-    }
-    else{
-        cout << "Suma drugiej serii jest większa od pierwszaj";    
-    }
-    
+{
+	int i;
+	int r = 5;
+	int tablica[r], tablica2[r];
+	int suma = 0;
+	int suma2 = 0;
+	cout << "Podaj 5 liczb: " << endl;
+	for (i=0; i < r; i++) {
+		cin >> tablica[i];
+		suma += tablica[i];
+	}
+	
+	cout << "Podaj kolejne 5 liczb: " << endl;
+	for (i=0; i < r; i++) {
+		cin >> tablica2[i];
+		suma2 += tablica2[i];
+	}
+	if(suma > suma2) cout << "Tablica 1 większa od Tablicy 2";
+	else if (suma < suma2) cout  << "Tablica 2 większa od Tablicy 1";
+	else cout << "Tablice są równe!";
+	
 	return 0;
 }
 

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Tue, 04 Jun 2019 15:25:27 +0200</pubDate><title><![CDATA[Galerie]]></title><url><![CDATA[galerie]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Galerie]]></menu><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;p&gt;{% galerie1 %}&lt;/p&gt;
+
+&lt;p&gt;{%&amp;nbsp; galerie2 %}&lt;/p&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author><menuOrder><![CDATA[4]]></menuOrder></item>

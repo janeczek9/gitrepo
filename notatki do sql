@@ -1,0 +1,27 @@
+https://www.sqlpedia.pl/
+
+każde polecenie sql kończy się średnikiem
+
+char - tekst stałej długosci
+varchar- tekst zmiennej długości
+
+podwójny myślni (--) w sql jest znakiem komentarz
+
+jesli w domu to: 
+
+https://www.sqlite.org/download.html
+
+Precompiled Binaries for Windows
+
+sqlite-tools-win32-x86-3300100.zip
+(1.72 MiB) 		A bundle of command-line tools for managing SQLite database files, including the command-line shell program, the sqldiff.exe program, and the sqlite3_analyzer.exe program.
+(sha1: 11d5d92b21a50678d73aba61389b6a568c39de2a)
+
+plik sqlite3
+
+cmd
+napisac sqlite3
+
+wszystkjie instrukjce mozna nazwac zapytaniami -qery
+
+FUNKCJA CZY W 8ZNAKOWYM HASLE ZNAJDUJE SIE JEDNA MALA LITERA JEDNA DUZA I JEDEN ZNAK SPECJALNY

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Szablon HTML 5 Bootstrap v.4</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/klasa.css">
+</head>
+
+<body>
+   <header>
+      <div class="container-fluid text-center">
+         <h1>Nasza klasa<br><span class="text-muted small">Serwis klasy 1A I LO</span></h1>
+      </div>
+   </header>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Nasza klasa</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nawigacja" aria-controls="nawigacja" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nawigacja">
+         <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Strona główna <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">O nas</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Galerie</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Archiwum
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">2017/2018</a>
+                  <a class="dropdown-item" href="#">2016/2017</a>
+               </div>
+            </li>
+         </ul>
+         <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Szukaj" aria-label="Szukaj">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Szukaj</button>
+         </form>
+      </div>
+   </nav>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-8">
+            <section class="my-4">
+               <h2>Aktualności</h2>
+               <ul class="list-group">
+                  <li class="list-group-item mb-2">
+                     <a href="img/news.png">
+                        <img src="img/news.png" class="rounded float-left" width="100">
+                     </a>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </li>
+                  <li class="list-group-item mb-2">
+                     <a href="img/news.png">
+                        <img src="img/news.png" class="rounded float-left img-fluid" width="100">
+                     </a>
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+               </ul>
+            </section>
+         </div>
+         <div class="col-md-4">
+            <aside class="rounded p-2 text-md-right my-1 my-md-4">
+               <h3>Zobacz również</h3>
+               <ol class="d-none d-md-block">
+                  <li>Pierwszy element listy</li>
+                  <li>Drugi element listy
+                     <ul>
+                        <li>podpunkt 1</li>
+                        <li>podpunkt 2</li>
+                     </ul>
+                  </li>
+               </ol>
+               <ol class="list-inline d-md-none">
+                  <li class="list-inline-item">Pierwszy element listy</li>
+                  <li class="list-inline-item">Drugi element listy
+               </ol>
+            </aside>
+         </div>
+      </div>
+   </div>
+   <footer>
+      <div class="container">
+         <div class="row">
+            <div class="col-12 bg-secondary text-white pt-2 rounded-md">
+               <p class="float-md-left">Stronę wykonał: webmaster@home.net</p>
+               <p class="float-md-right">&copy; 2019 Klasa 1A</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- jQuery library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!-- Popper JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

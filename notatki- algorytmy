@@ -1,0 +1,22 @@
+Specyfikacja algorytmu
+1)zadanie
+2)dane wejściowe i ich typy
+Właściwy algorytm: lista kroków (musi być zamknieta)
+(mamy rozne rodzaje algorytmów) (moje byc tez rozgałęciony, "idzie w dwie strony")
+3)dane wyjściowe i ich typy/postać
+
+Etapy konstruowania algorytmów: 
+1. Sformułowanie zadania
+2. określenie danych wejściowych
+3. określenie wyniku i sposobu prezentacji
+4. ustalenie metody wykonania zadania
+5. zapisanie algorytmu za pomocą wybranej metody.
+6. Analiza poprawności rozwiązania.
+7. Testowanie rozwiązania dla różnych danych - algorytm powinien być uniwersalny, tzn. działać dla różnych zestawów danych. 
+8. ocena skuteczności algorytmu.
+
+operacja to - wykonanie jakiegoś obliczenia
+operacja wejścia/ wyjścia ( w równoległoboku) - wypisz coś
+blok decyzyjny (w rombie) - dać warunek, wyrażenie logiczne, np. jeśelni x= 100, to..., jeże;i nei to...
+
+

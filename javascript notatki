@@ -1,0 +1,63 @@
+DO PISANIA KODU: https://codepen.io/ LUB https://js.do/
+NP DO ĆWICZENIA I UCZENIA SIĘ: https://www.w3schools.com/js/
+
+console.log(c); -> pojawia sie w onsoli po nacisnieciu F12
+document.write("<h1>"+c+"</h1"); - >za pomoca js napisac cos w dokumencie, zrobic to dynamicznie
+
+pierwszy kod js (podstawy):
+<script type="text/javascript">
+// Edit your script here
+var a = 5;
+var b = 10;
+var c = a + b;
+console.log(c);
+document.write("<h1>"+c+"</h1");
+window.alert(c);
+document.write('<p id="js"></p>');
+document.getElementById("js").innerHTML = c;
+</script>
+<!-- edit your html here -->
+
+
+<script>
+// Edit your script here
+var a = parseInt(prompt('Podaj bok: '));
+var b = parseInt(prompt('Podaj bok: '));
+var c = parseInt(prompt('Podaj bok: '));
+document.write(a + b + c);
+if (a+b>c && a+c>b && b+c>a) {
+	window.alert('Da się!');
+} else {
+	window.alert('Nie da się!');
+}
+</script>
+<!-- edit your html here -->
+
+typy danych w JS:
+var dlugosc = 10; //liczba
+var imie = "Dorotoa"; //string - napis
+var tablica = ["Fiat", "Skoda", "Merc"];
+document.write(tablica[1]);
+var osoba = {
+	imie:"Adam", 
+	nazwisko:"Słodowy"
+	wiek: 25
+};
+document.write(osoba.imie, osoba.wiek);
+
+
+
+DOKOŃCZYC W DOMU TEN SKRYPT PO NACISKU WYSLANIU TRESCI SPRAWDZANIE DLUGOSC CIAGU, WYSWIETLANI EKOMUNIKATU CJESLI ZLE,E CZERWONE OBRAMOWANIE JESLI COS ZLE, WYSYLA JELSI OK
+
+
+niech osKOLOROWUJE KOLOR PO ZNJECHABNIU MYSZKA
+
+
+slidedown = metoda jesliklikasz na ajkies element to mozesz wylonic inny element, slideup
+W PIATEK CWIECZENIE
+
+
+SZYFR SYMETRTCZNY - 
+
+NAPISAC FORMULY SZYFROWANIA I DESZYFROWANIA
+WPISAC TESKT I ZASZYFROWAC ITP

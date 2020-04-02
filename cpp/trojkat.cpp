@@ -1,41 +1,33 @@
 /*
  * trojkat.cpp
- * 
- * Copyright 2019  <>
-
+ *
+ * Napisz program, który pobiera od użytkownika trzy liczby i sprawdza, czy da się z nich zbudować trójkąt.
+ * Program powinien wyprowadzić odpowiedni komunikat.
+ * Jeśli da się zbudować trójkąt, sprawdź, czy to trójkat prostokątny.
+ * Wyprowadź odpowiedni komunikat.
+ *
  */
 
-using namespace std;
 #include <iostream>
 #include <cmath>
 
+using namespace std;
+
 int main(int argc, char **argv)
 {
-    int a ;
-    int b ;
-    int c ;
-    cout << "Podaj bok a: " ;
-    cin >> a ;
-    cout << "Podaj bok b: " ;
-    cin >> b ;
-    cout << "Podaj bok c: " ;
-    cin >> c ;
-    
-    if (a + b > c)
-    {
-    if (a + c > b)
-    {
-    if (b + c > a)
-
-        cout << "Da się zrobić trójkąt" <<  endl;
-    }}
-    else cout << "Nie da się zrobić trójkąta" <<  endl;
-       
-       if ((a * a + b * b ==  c * c) || (a * a + c * c ==  b * b) || (b * b + c * c ==  a * a))
-        cout << "To jest trojkat prostokatny.";
-    else
-        cout << "To nie jest trojkat prostokatny.";
-	
+    float bok1;
+    cout << "Podaj pierwszy bok: ";
+    cin >> bok1;
+    float bok2;
+    cout << "Podaj drugi bok: ";
+    cin >> bok2;
+    float bok3;
+    cout << "Podaj trzeci bok: ";
+    cin >> bok3;
+    if ((bok1 + bok2 > bok3) && (bok1 + bok3 > bok2) && (bok2 + bok3 > bok1)) cout << "To jest trojkat." << endl;
+        else cout << "To nie jest trojkat." << endl;
+    if ((bok1 * bok1 + bok2 * bok2 ==  bok3 * bok3) || (bok1 * bok1 + bok3 * bok3 ==  bok2 * bok2) || (bok2 * bok2 + bok3 * bok3 ==  bok1 * bok1)) cout << "To jest trojkat prostokatny.";
+        else cout << "To nie jest trojkat prostokatny.";
 	return 0;
 }
 

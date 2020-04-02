@@ -1,0 +1,54 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-01-22T09:01:03+01:00
+
+====== Javascript ======
+Created środa 17 stycznia 2020
+
+DO PISANIA KODU: https://codepen.io/ LUB https://js.do/
+NP DO ĆWICZENIA I UCZENIA SIĘ: https://www.w3schools.com/js/
+
+console.log(c); -> pojawia sie w onsoli po nacisnieciu F12
+document.write("<h1>"+c+"</h1"); - >za pomoca js napisac cos w dokumencie, zrobic to dynamicznie
+
+pierwszy kod js (podstawy):
+<script type="text/javascript">
+// Edit your script here
+var a = 5;
+var b = 10;
+var c = a + b;
+console.log(c);
+document.write("<h1>"+c+"</h1");
+window.alert(c);
+document.write('<p id="js"></p>');
+document.getElementById("js").innerHTML = c;
+</script>
+<!-- edit your html here -->
+
+
+<script>
+// Edit your script here
+var a = parseInt(prompt('Podaj bok: '));
+var b = parseInt(prompt('Podaj bok: '));
+var c = parseInt(prompt('Podaj bok: '));
+document.write(a + b + c);
+if (a+b>c && a+c>b && b+c>a) {
+	window.alert('Da się!');
+} else {
+	window.alert('Nie da się!');
+}
+</script>
+<!-- edit your html here -->
+
+typy danych w JS:
+var dlugosc = 10; //liczba
+var imie = "Dorotoa"; //string - napis
+var tablica = ["Fiat", "Skoda", "Merc"];
+document.write(tablica[1]);
+var osoba = {
+	imie:"Adam", 
+	nazwisko:"Słodowy"
+	wiek: 25
+};
+document.write(osoba.imie, osoba.wiek);
+

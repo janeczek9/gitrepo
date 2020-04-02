@@ -1,6 +1,5 @@
 /*
  * petla.cpp
- * 
  */
 
 
@@ -9,16 +8,15 @@
 using namespace std;
 
 int main(int argc, char **argv)
-{   
-	int i = 0; // dEKLARACJA I INICJACJA
-    while(i <= 20 )  {
-        cout << i <<endl;
-        cout << "Hello!";
+{
+    int i = 0;// DEKLARACJA I INICJACJA = DEFINICJA
+	while(i <= 20) {
+        cout << i << endl;
+        cout << "Hello! ";
         i += 2;
+    }
     
-}
-
-    cout << "Wartość i: " << i << endl;
+    cout << endl << "Wartość i:" << i << endl;
     
 	return 0;
 }

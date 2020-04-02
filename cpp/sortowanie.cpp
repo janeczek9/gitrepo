@@ -1,7 +1,5 @@
 /*
  * sortowanie.cpp
- * 
- * Copyright 2019  <>
  */
 
 
@@ -85,6 +83,20 @@ void bubble_sort(int tab[], int n) {
 	cout << "Zamian: " << ile << endl;
 }
 
+// 5, 3, 8, 5, 1, 0, 9
+// 3, 5, 5, 1, 0, 8, 9
+// 3, 5, 1, 0, 5, 8, 9
+
+// dla n liczb = n-1, n-2, n-3, n-..., 1 -> porównań
+//S(k) = (a1 + ak) / 2 * k
+//a1 = 1
+//ak = n-1
+//k = n-1
+
+//Ln = Sk = (1 + n-1) / 2 * (n-1) = n / 2 * (n-1) = n^2 - n / 2
+//O(n^2)
+
+
 int main(int argc, char **argv) {
 	int tab[50];
 	int tab2[50];
@@ -99,3 +111,4 @@ int main(int argc, char **argv) {
 	wyswietl(tab, n);
 	return 0;
 }
+

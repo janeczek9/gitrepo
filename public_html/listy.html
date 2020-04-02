@@ -1,67 +1,82 @@
 <!DOCTYPE html>
 <html lang="pl">
 
--->
-
 <head>
     <meta charset="utf-8" />
     <title>Listy w HTML-u</title>
     <style>
-        #menu li {
-            display: inline;
-            padding-left: 20px;
-            margin-left: 10px;
-            }
-    
-            .lista-abc {
+        #menu li { 
+                display: inline; 
+                padding-left: 20px;
+                margin-left: 10px;
+                
+             }
+             
+             .lista-abc {
                 list-style-type: lower-alpha;
             }
+        
             .lista-kwadrat {
-                list-kwadrat-type: square;
+                list-style-type: square;
             }
     </style>
+
+
 </head>
 
+
 <body>
+
     <div id="menu">
         <ul>
             <li><a href="index.html">Start</a></li>
-            <li><a href="Tabele.html">Tabele</a></li>
-            <li><a href="./dane/zestawienie.html">Zestawienie</a></li>
-            <li><a href="../readme.html">Readme</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="dane/zestawienie.html">Zestawienie</a></li>
+            <li><a href="../readme.hmtl">Readme</a></li>
             <li><a href="../../Dokumenty/www/README.md">README.md</a></li>
         </ul>
     </div>
-    <h1>Zasady stosowania Listy</h1>
+
+
+    <h1>Zasady stosowania list</h1>
+
     <h2>Listy wypunktowane</h2>
-        <ul class=lista-kwadrat>
-            <li><a href="../../Dokumenty/www/textfile.txt">Plik BLA BLA BLA</a></li>
-            <li>element listy</li>
-            <li>element listy</li>
-            <li>element listy</li>
-            <li>
-                <ol class="lista-abc">
-                    <li>element zagnieżdżony</li>
-                    <li>element zagnieżdżony</li>
-                    <li>element zagnieżdżony</li>
-                </ol>
-            </li>
-        </ul>
-        
+
+    <ul class="lista kwadrat">
+        <li><a href="../../Dokumenty/www/strona1.html">strona1.html</a></li>
+        <li>element listy</li>
+        <li>element listy</li>
+        <li>element listy</li>
+        <li>element listy</li>
+        <li>
+            <ol>
+                <li>element zagnieżdżony</li>
+                <li>element zagnieżdżony</li>
+                <li>element zagnieżdżony</li>
+            </ol>
+        </li>
+    </ul>
+    
     <h2>Listy numerowane</h2>
-        <ol>
-            <li>element listy</li>
-            <li>element listy</li>
-            <li>element listy</li>
-            <li>element listy</li>            
-        </ol>
+    
+    <ol class="lista-abc">
+        <li>elemnet listy</li>
+        <li>element listy</li>
+        <li>element listy</li>
+        <li>element listy</li>
+        <li>element listy</li>
+        <li>element listy</li>
+    </ol>
+    
     <h2>Ulubione strony</h2>
-        <ol>
-            <li><a href="http://www.dobreprogramy.pl">DobreProgramy</a></li>
-            <li><a href="http://www.dobreprogramy.pl" target="_blank">DobreProgramy</a></li>
-            <li><a href="http://www.dobreprogramy.pl" target="_top">DobreProgramy</a></li>
-        </ol>
-        <p><img src="https://i.iplsc.com/zdj-ilustracyjne/0006DVXSTLL51M5U-C122-F4.jpg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4OH4QwKa2TqRI8Ld-EhWTMFw63SMnep-sAZYvaxObDGZZHHzd"> doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHiVL8LmxC3Je4Z4yMhWBXZ-Cygw750N-07WHj8gb1mOBbFJlu" Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ull</p>
+    <ol>
+        <li><a href="https://interia.pl/">interia</a></li>
+        <li><a href="https://interia.pl/" target="_blank">interia w nowej karcie</a></li>
+    </ol>
+
+    <p><img src="https://thumbs.img-sprzedajemy.pl/1000x901c/9a/04/9f/nowy-komputer-dell-i5-4x3ghz-8gb-1tb-win8-mysz-krakow-297893142.jpg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. <img src="https://www.psy.pl/wp-content/uploads/2017/11/Untitled-design-75-e1511527734782.jpg"> Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. <img src="http://dobry-weterynarz-krakow.pl/wp-content/uploads/2015/08/porady_fotolia_chomik.jpg"> Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ull</p>
+
 </body>
+
 
 </html>

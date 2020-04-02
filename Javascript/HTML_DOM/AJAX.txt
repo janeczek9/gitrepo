@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-02-28T10:02:48+01:00
+
+====== AJAX ======
+Created piątek 28 lutego 2020
+
+żądania asychroniczne
+
+asp - jedna z technologii działajaca po stronie serwera, promowana przez microsoft, coś podobnego do php, język skryptowy

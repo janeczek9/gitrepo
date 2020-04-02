@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-03-02T09:18:44+01:00
+
+====== SZYFROWANIE ======
+Created czwartek 27 lutego 2020
+
+__Szyf symetrtczny__
+
+**Szyfr Vigener'a**
+t(i, j) = t(j, i)
+
+funkcje jednokierunkowe  ("funkcje skrótu") - funkcja, która jest łatwa do wyliczenia, ale trudna do odwrócenia
+
+finger print ("odcisk palca") - 
+
+**SSL** - //(Secure Sockets Layer)// - jest protokołem do zabezpiecznia komunikacji odbywającej się w Internecie. Dzięki  niemu, wszytskie informacje wysyłane pomiędzy przeglądarką internetową a serwerem są szfrowane.
+Zastosowania certyfikatu ssl:
+-banki i instytucje finanswoe
+-sklepy intenerowe i aukcyjne
+-e-zdrowia
+-stron intenetoiwych administracji publicznej
+-biznesowe serwisy internetowe i portale korrporacyjne
+-komunikacji w ramach sieci intranet (sieci wewnętrzne np googla i fb w POolsce)
+-zabezpiecznia serwisów udostępniającyh pliki (SFTP)
+-serwisów internetowych szkół i uczelni, serwisów pocztowych i serwerów baz danych
+-aplikacji typu klient-serwer
+
+swój hosting np na linuxpl.com - wtedy przbiega przez protokół https
+
+hosting -przechowywanie naszych plików
+domemne wykupujemy u usługodawcy internetowego
+com - jest domena komercyjną
+
+NASK - nauka i Akademia SIeci - instytucja autoryzowana do zarządzania domeną pl, zarządzanie poddomenami (np. regionalne) przekazuje innym intytucjom
+
+dostępność sprawdzic, kupic doemne mozna np na domeny.pl
+
+bezpłatny certyfikat ssl - let's Encrypt  - sprawdza się w przypadku internetoeych projektów działających na mniejsza skalę, trzbe a go odnawiać ręznoie co 90 dni
+
+ 
+

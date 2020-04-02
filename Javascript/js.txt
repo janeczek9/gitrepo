@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-03-11T09:07:26+01:00
+
+====== js ======
+Created środa 11 marca 2020
+
+https://p5js.org/download/
+
+__wazne informacje dla tej biblioteki: https://p5js.org/reference/__
+
+koła olimpisjkie bez pętli:
+function draw() {
+  // put drawing code here
+  strokeWeight(10);
+  stroke('blue');
+  ellipse(100, 100, 150, 150);
+  stroke('black');
+  ellipse(270, 100, 150, 150);
+  stroke('red');
+  ellipse(440, 100, 150, 150);
+  stroke('yellow');
+  ellipse(190, 180, 150, 150);
+  stroke('green');
+  ellipse(360, 180, 150, 150);
+}
+
+POBAWIC SIE W DOMNU

@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-02-13T11:03:13+01:00
+
+====== informatyka ======
+Created czwartek 13 lutego 2020
+
+dokument tekstowy: doc, docx(dokument kompresowany)
+
+
+**J E D N O S T K I**
+1 b(it) * 8 = 1 B(ajt) -> można pojedynczy znak zakodowac w kodzie ASCII 
+1111111(2) = 127(10)
+11111111(2) = 255(10)
+
+Aktualnie stosuje się kodowanie UTF-8 = 2 bajty
+
+producenci pamieci masowych przyjmuja 1000 B = 1kB
+stą dysk 256GB sa nam ok 240GB
+
+1024kb = 1MB
+1024 b
+1024 B = 1kB
+1024kB = 1MB
+1024 MB = 1GB
+1024GB = 1TB
+1kb [przepustowość (ile inforjacji jestem przesłac w ciągu jednej sekundy czasami mierzona w Bajtach na sekunde B/s lub Bps), prędkość łącza internetowego np. kB/s]
+
+

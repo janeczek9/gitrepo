@@ -1,34 +1,35 @@
 /*
  * tab4.cpp
- * 
- * Copyright 2019  <>
-
  */
 
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
-    #define W	5
-    #define K	10
-    
-    
+#define N	6
+#define M 	7
+
+
 int main(int argc, char **argv)
-{   
-    int i, j;
-    int r = 0;
-    int a = 0;
-	int tab[W][K];
-    cout << "Podaj różnicę liczb w tablicy ";
-    cin >> r;
-    cout << "Podaj wartość pierwszego elementu ";
-    cin >> a;
-    for (i = 0; i < W; i++){
-        for(j = 0; j < K; j++){
-		tab[i][j] = a;
-        a += 1;
-        tab[i][j] = a;
-        cout << tab[i][j] << " ";
-        }}
-    return 0;
+{
+	int tab2W[N][M];
+	int i, j;
+	int r;
+	int a;
+	cout << "podaj wartość r: " << endl;
+	cin >> r;
+	cout << "Podaj pierwszą liczbę tabeli: " << endl;
+	cin >> a;
+	
+	for (i=0; i < N; i++) {
+		for (j=0; j < M; j++) {
+			tab2W[i][j] = a + i + j + r;
+			cout << setw(4) << tab2W[i][j] << " ";
+		}
+		cout << endl;
+	}
+	
+	return 0;
 }
+

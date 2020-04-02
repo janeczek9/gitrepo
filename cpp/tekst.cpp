@@ -1,30 +1,35 @@
 /*
  * tekst.cpp
- * 
- * Copyright 2019  <>
  */
+
 
 #include <iostream>
 
-using namespace std;
+#define ROZMIAR 100
 
-#define R 100
+using namespace std;
 
 int main(int argc, char **argv)
 {
-    char tekst[R];
-    int i;
-    int j = 1;
-    cout << "Podaj zdanie: " << endl;
-    cin.getline(tekst, R);
-    for (i = 0; i < R ; i++){
-        if(int(tekst[i]) == 32){
-            j +=1;
-        }
-    }
-    cout << "Ilość słów w tym zdaniu: "<< j << endl;
-    return 0;
+	char tekst[ROZMIAR];
+	int i;
+	cout << "Podaj imię i nazwisko: " << endl;
+	// cin >> tekst;
+	cin.getline(tekst, ROZMIAR);
+	// cout << tekst;
+	for (i=0; i < ROZMIAR; i++) {
+		cout << tekst[i];
+	}
+	cout << endl;
+	
+	i = 0;
+	while (tekst[i] != '\0') {
+		cout << tekst[i];
+		i++;
+		
+	}
+	cout << endl;
+	
+	return 0;
 }
-
-
 

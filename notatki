@@ -1,0 +1,41 @@
+C++
+===
+Created czwartek 05 września 2019
+
+namespace - przestrzeń nazw, std::cout (namespace std - standardowa)
+
+C++ wynaga deklaracji typu zmiennej
+int - liczba całkowita
+float - liczby ułamkowe
+każda instrukcja kończy się średnikiem!
+operator wprowadzania w lewo <<
+operatoe pobierania w prawo >>
+kompilacja klawisz F8 -w geanym, Zbuduj / Compile
+
+Pary otwarcie-zamknięcie: "", '', (), [], {}
+
+error: no match
+warning: unused variable - zadekralowalismy zmienna, ale jeszcze jej nie uzylismy
+error: expected initializer before ‘cout’ - brak średnika
+error: expected ‘;’ before ‘return’ - brak średnika
+error: expected ‘}’ at end of input - kawałek bloku kodu jest niedomknięty
+
+pliki obiektowe rozszerzenie ".o"
+linkowanie F9 - (w geanym) lub Zbuduj / Build) - to łączenie kodu z bibliotekami systemowymi
+uruchomienie F5 lub ZBuduj / Wykonaj
+pliki wykonywalne w windows to pliki z rozszerzeniem .exe
+
+Preferencje / Narzędzia / Terminal:
+terminator - e "bin/sh %c"
+
+gitsy - czyli fragmnety kodu
+
+W  D O M U ! - ZAINSTALOWAĆ KOMPILATOR, LINKER
+prościej: http://www.codeblocks.org/ --> downloads --> Binaries --> codeblocks-17.12mingw-setup.exe 
+lub dev C++ --> download sourceforge
+
+
+
+
+
+

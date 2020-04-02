@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Użycie tablic w JacaScripcie</title>
+</head>
+<body>
+<p id="samochod"></p>
+<hr>
+<input type="text" id="indeks">
+<button onclick="displayCar()">Wpisz</button>
+
+<script type="text/javascript">
+	var cars = ["Saab", "Fiat", "Opel", "Mercedes"];
+	//alert(cars.length);
+	//alert(cars[0]);
+	function displayCar() {
+		var i = document.getElementById("indeks").value;
+		if (i > -1 && i < cars.lenght - 1) {
+			alert("OK");
+		}
+		else {
+			return alert("Błędny indeks");
+		}
+	}
+</script>
+
+</body>
+
+</html>

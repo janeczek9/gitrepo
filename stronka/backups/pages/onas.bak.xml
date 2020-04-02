@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Wed, 22 May 2019 09:37:14 +0200</pubDate><title><![CDATA[O nas]]></title><url><![CDATA[onas]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[O nas]]></menu><menuOrder><![CDATA[3]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;h2&gt;Klasa 1A 2016&lt;/h2&gt;
+
+&lt;table border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;1&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Profil&lt;/th&gt;
+			&lt;td&gt;matematyczno-fizyczny&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Wychowawca&lt;/th&gt;
+			&lt;td&gt;mgr Adam Słomka&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Ala Abacka&lt;/li&gt;
+	&lt;li&gt;Bartosz Bartoszewski&lt;/li&gt;
+	&lt;li&gt;Cecylia Celińska&lt;/li&gt;
+	&lt;li&gt;Danuta Dąbrowska&lt;/li&gt;
+	&lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author></item>

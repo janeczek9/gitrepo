@@ -1,24 +1,29 @@
 /*
  * zlozonosc.cpp
- * 
- * Copyright 2020  <>
  */
 
 
 #include <iostream>
 using namespace std;
 
-int main(int argc, char **argv)
+// Ln = 1
+// Ln = n
+// 0(n) - algorytm o złozoności n
 
+int main(int argc, char **argv)
 {
-    int n, i;
-    cout << "Podaj wartość liczby n" << endl;
-    cin >> n;
-    i = 1;
-    while (i <= n)  {
-        cout << i << ", ";
-        i += 2;
-        }       
+	int n = 5;
+	int tb[n] = {3, 5, 8, 1, 9};
+	//int i = 0;
+	int x = 8;
+	for (int i = 0; i < n; i++) {
+		if (tb[i] == x) {
+			cout << i;
+			return 0;
+		}
+	}
+	cout << -1;
+	
 	return 0;
 }
 

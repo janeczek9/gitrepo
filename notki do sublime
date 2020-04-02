@@ -1,0 +1,81 @@
+sublime text: Bootstrap x4 snippets, html boilertplate, html - jss-css-prefity, sublime linter- html-tidy
+ctr shift p packages instal packegs
+CDN - Content Delivery Network, serwer internetowy
+https://getbootstrap.com/ bootsrtap CDN SKOPIOWAC: <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">WKLEIC DO HEAD
+EXAMPLE STARTET
+CRTL U - ZOBACZYC ZRODLO STRONY
+
+                    <table class="table-striped mx-auto"> - wysierodkuje
+
+w domu plan css pozmieniac kolory
+zastanowić się jak zrobić aby tabela byłe responsywna
+
+
+robiąc strone, która ma byc responsywna unikamy rozmiarów wpisywanych "na sztywno", używamy jednostek względnych:
+
+    em 	Relative to the font-size of the element (2em means 2 times the size of the current font) - często używany, (dwa razy mniejsza czcionka "dziecka" niż czcionka "rodzica")
+ex 	Relative to the x-height of the current font (rarely used)
+ch 	Relative to width of the "0" (zero)
+    rem Relative to font-size of the root element - też ważna
+vw 	Relative to 1% of the width of the viewport*
+vh 	Relative to 1% of the height of the viewport*
+vmin Relative to 1% of viewport's* smaller dimension
+vmax Relative to 1% of viewport's* larger dimension
+% 	Relative to the parent element
+
+
+jednostki absolutne(raczej nie):
+cm 	centimeters
+mm 	millimeters
+in 	inches (1in = 96px = 2.54cm)
+px * 	pixels (1px = 1/96th of 1in)
+pt 	points (1pt = 1/72 of 1in)
+pc 	picas (1pc = 12 pt)
+
+4.5rem - wielokrotnośc czcionki bazowej o 4,5, odsuwa ją
+
+overflow - decyduje o tym co ma się stac jeseli zawartośc jakiegoś elementu wykracza poza jego obszar (może być np scroll)
+
+wieport - dostępna szerokość i wysokość ekranu dla jakiejś przeglądarki:
+scroll - wymusza, auto
+
+<span>
+<small> - automatycznie zmniejsza czcioke w stosunku do span
+
+
+W DOMUPRZEGLĄDNĄĆ BS4 TYPOGRAPHY, UMIEC ZAQSTOSOWAC T EKLASY I ZNACZNIKI (NA KONCU STRONY CO SA)
+
+input- pola musza byćnazywane (name)
+
+<input type="submit" name=""> - przycisk - submit -wyslij, zatwierdź
+
+file:///home/kl2ag2/gitrepo/public_html2/?login=alankot - mechanizm działania żądań typu GET
+żądania GET - ida otwarte, nie są przeglądane (nie nadaje się do logowania, haseł itp, nadaje się do przekazywania wiadomosci niewrażliwych np. wyszukiwarka)
+
+file:///home/kl2ag2/gitrepo/public_html2/formularz.html?login=alankot&email=alaaa%40lo1.sandomierz.pl - (znak zapytania oznacza, że są przesyłane dodatkowe zmienne do serwera, może być zastąpione % itp.)
+
+PRZEJRZEC TYPY INPUT DOKUMENTACJ ABOOTSRAP CONTOMENTS FORM!!!!!!!!!!!!
+
+PHP Na wzór języka c++ ale do zastosowań wwbowych, jest dedykowanych do tego typu aplikacji, stosowany do tworzenia skryptów www
+
+https://www.fullstackpython.com/flask.html, https://www.djangoproject.com/ - frameworkowe
+
+file://- pozwala otwierac w przglądarce pliki LOKALNE
+przegladarka to taki program, który oczekuje html
+
+aby otworzyc php - przede wszystkim zacząć od http://
+
+
+serwery www szukaja najpierw index.html jesli nie ma to index.php
+
+zmienna POST - tablica asocjacyjna,
+
+data sanization -sprawdzanie danych
+
+jeśli po if jest wiecej niż jedna instrukcja wydrukuj trzeba wziąć w  {}
+
+https://www.php.net/manual/en/function.htmlspecialchars.php - PRZYDATNA STRONKA
+
+required- to pole musi byc uzupelnione aby uzytkownik mógl przeslac na serwer np w formularzu
+
+maxlenght = maksymalna liczba znakow mozliwyc wpisanych do pola
