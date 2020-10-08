@@ -1,3 +1,10 @@
+CREATE TABLE tbOddzialy (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    oznaczenie CHAR(3),
+    rok_naboru CHAR(4),
+    rok_matury CHAR(4),
+);
+
 CREATE TABLE tbUczniowie (
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     imie TEXT,
@@ -7,12 +14,10 @@ CREATE TABLE tbUczniowie (
     awatar BLOB,
     egzamin INTEGER,
     srednia_ocen DECIMAL,
-    uwagi TEXT
+    uwagi TEXT,
+    
+    klasa_id INTEGER,
+    
+    FOREIGN KEY (klasa_id)REFERENCES tbOddzialy(id)
 );
 
-CREATE TABLE tbOddzialy (
-    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    oznaczenie TEXT,
-    rok_naboru DATE,
-    rok_matury DATE,
-);
